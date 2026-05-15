@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The First Entry - Journal I</title>
+    <link rel="stylesheet" href="./src/styles/tailwind.css" />
+    <link rel="stylesheet" href="./src/styles/stage-1.css" />
+  </head>
+  <body class="stage-1">
+    <div class="transition-overlay" data-transition-overlay></div>
+    <div class="page-shell">
+      <main
+        class="journal-shell journal-surface rounded-[2px] px-8 py-10 md:px-16 md:py-14 shadow-[4px_4px_0px_rgba(26,26,24,1)]"
+        data-journal-container
+      >
+        <header
+          class="mb-12 flex items-end justify-between border-b border-ink-muted/50 pb-4"
+        >
+          <h1
+            class="font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-ink"
+          >
+            The Yellow Room
+          </h1>
+          <p class="journal-date italic text-lg tracking-wider">June 14th</p>
+        </header>
+        <section class="space-y-6 text-lg md:text-xl leading-[1.8] text-ink">
+          <p class="indent-8">
+            John has brought me to this house for summer. He said that fresh air
+            is good for me and I should not be so worried. I should think less.
+            I do not agree with his technique but he is a doctor. He knows what
+            is best for me.
+          </p>
+          <p class="indent-8">
+            The room he picked for me is large. The windows are barred. There is
+            wallpaper in the room. It is yellow and it is peeling at the edges.
+            It has a strange pattern which I can not follow no matter how much I
+            stare.
+          </p>
+        </section>
+        <nav class="journal-actions border-ink-muted/50">
+          <button
+            class="choice-button border-ink text-ink hover:bg-ink hover:text-journal"
+            data-next="./stage-1-journal-2.html"
+            type="button"
+          >
+            Study the pattern more closely
+          </button>
+          <button
+            class="choice-button border-ink text-ink hover:bg-ink hover:text-journal"
+            data-next="./stage-1-journal-2.html"
+            type="button"
+          >
+            Try to get some sleep
+          </button>
+          <button
+            class="choice-button border-ink text-ink hover:bg-ink hover:text-journal"
+            data-next="./stage-1-journal-2.html"
+            type="button"
+          >
+            Write in my journal instead
+          </button>
+        </nav>
+      </main>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>

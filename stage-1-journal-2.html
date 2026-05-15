@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The First Entry - Journal II</title>
+    <link rel="stylesheet" href="./src/styles/tailwind.css" />
+    <link rel="stylesheet" href="./src/styles/stage-1.css" />
+  </head>
+  <body class="stage-1">
+    <div class="transition-overlay" data-transition-overlay></div>
+    <div class="page-shell">
+      <main
+        class="journal-shell journal-surface rounded-[2px] px-8 py-10 md:px-16 md:py-14 shadow-[4px_4px_0px_rgba(26,26,24,1)]"
+        data-journal-container
+      >
+        <header
+          class="mb-12 flex items-end justify-between border-b border-ink-muted/50 pb-4"
+        >
+          <h1
+            class="font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-ink"
+          >
+            The Pattern Doesn't Connect
+          </h1>
+          <p class="journal-date italic text-lg tracking-wider">June 15th</p>
+        </header>
+        <section class="space-y-6 text-lg md:text-xl leading-[1.8] text-ink">
+          <p class="indent-8">
+            It has been a while since we came to this house. I tried to rest. But I could not. My mind keeps thinking about the
+            wallpaper. The pattern seems inconsistent. It starts in one direction and breaks and begins somewhere else.
+          </p>
+          <p class="indent-8 text-ink-muted">
+            However, John says I am improving. He said that I should not let my imagination take over myself. I smiled and told him
+            that indeed I am feeling much better. I did not mention him about the wallpaper. I am not sure why.
+          </p>
+        </section>
+        <nav class="journal-actions border-ink-muted/50">
+          <button
+            class="choice-button border-ink text-ink hover:bg-ink hover:text-journal"
+            data-next="./stage-2-journal-1.html"
+            type="button"
+          >
+            Look at it again tonight
+          </button>
+          <button
+            class="choice-button border-ink text-ink hover:bg-ink hover:text-journal"
+            data-next="./stage-2-journal-1.html"
+            type="button"
+          >
+            Ask John to change the room
+          </button>
+          <button
+            class="choice-button border-ink text-ink hover:bg-ink hover:text-journal"
+            data-next="./stage-2-journal-1.html"
+            type="button"
+          >
+            Try to read and forget about it
+          </button>
+        </nav>
+      </main>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>

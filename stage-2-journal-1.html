@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Pattern Emerges - Journal I</title>
+    <link rel="stylesheet" href="./src/styles/tailwind.css" />
+    <link rel="stylesheet" href="./src/styles/stage-2.css" />
+  </head>
+  <body class="stage-2">
+    <div class="wallpaper-bg" aria-hidden="true"></div>
+    <div class="page-shell">
+      <main
+        class="journal-shell journal-surface rounded-[2px] px-8 py-10 md:px-16 md:py-14"
+        data-journal-container
+      >
+        <header class="mb-10 border-b border-ink/20 pb-4">
+          <p class="text-ink-muted text-lg italic text-right font-body">
+            May 14th
+          </p>
+          <h1
+            class="text-ink text-[40px] font-gothic leading-tight text-center"
+          >
+            Something Behind It
+          </h1>
+        </header>
+        <section class="space-y-6 text-lg md:text-xl leading-[1.8] text-ink">
+          <p>
+            Recently, I have been watching the wallpaper in the evening. When
+            the light changes, the pattern also shifts. I know it can not
+            actually move. But
+            <span class="glitching-word" data-glitch-delay="0.2"
+              >something</span
+            >
+            behind it does. A strange shape.
+          </p>
+          <p>
+            I have no explanation for such a
+            <span class="glitching-word" data-glitch-delay="0.7">movement</span
+            >. I told myself that I will stop looking at it but I can not.
+          </p>
+          <p>
+            John would be so
+            <span class="glitching-word" data-glitch-delay="1.5">furious</span>
+            if he knew how many hours I spent looking at it. I did not tell him.
+            I did not tell anyone.
+          </p>
+        </section>
+        <nav class="journal-actions border-ink/20">
+          <button
+            class="choice-button border-ink text-ink"
+            data-next="./stage-2-journal-2.html"
+            type="button"
+          >
+            Stay up and keep watching
+          </button>
+          <button
+            class="choice-button border-ink text-ink"
+            data-next="./stage-2-journal-2.html"
+            type="button"
+          >
+            Trace the shape with my finger
+          </button>
+          <button
+            class="choice-button choice-button--glitch border-ink text-ink"
+            data-next="./stage-2-journal-2.html"
+            type="button"
+          >
+            Write down exactly what I see
+          </button>
+        </nav>
+      </main>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>

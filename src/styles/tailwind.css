@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Courier+Prime:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&family=Nothing+You+Could+Do&family=Creepster&family=Nosifer&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --paper-parchment: #fdfbf7;
+    --journal-bg: #f4efe6;
+    --ink-dark: #1a1a18;
+    --ink-muted: #969389;
+    --sickly-yellow: #f3efe0;
+    --bruised-green: #4a5320;
+    --rotten-mustard: #d4ce5c;
+  }
+
+  body {
+    @apply min-h-screen antialiased;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply min-h-screen flex items-center justify-center p-4;
+  }
+
+  .transition-overlay {
+    @apply fixed inset-0 pointer-events-none z-50;
+  }
+
+  .fade-out {
+    @apply animate-fade-out;
+  }
+
+  .fade-out-text {
+    @apply animate-fade-out-text;
+  }
+
+  .journal-shell {
+    @apply w-full max-w-[800px] border;
+  }
+
+  .journal-actions {
+    @apply mt-12 flex flex-col items-center gap-4 border-t pt-8;
+  }
+
+  .choice-button {
+    @apply w-full md:w-[220px] h-[48px] border text-lg uppercase tracking-wide transition-colors duration-150 flex items-center justify-center;
+  }
+
+  .choice-button--glitch {
+    @apply duration-500;
+  }
+}
+
+@media (max-width: 768px) {
+  .journal-shell {
+    max-width: 100%;
+  }
+
+  .journal-actions {
+    gap: 12px;
+  }
+
+  .choice-button {
+    height: 44px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    padding: 12px;
+  }
+
+  .journal-actions {
+    padding-top: 20px;
+  }
+
+  .choice-button {
+    height: 42px;
+    font-size: 0.9rem;
+  }
+}

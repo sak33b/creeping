@@ -1,0 +1,14 @@
+.stage-1 {
+  background-color: var(--paper-parchment);
+  color: var(--ink-dark);
+  font-family: "EB Garamond", serif;
+}
+
+.stage-1 .journal-surface {
+  background-color: var(--journal-bg);
+  border-color: var(--ink-dark);
+}
+
+.stage-1 .journal-date {
+  color: var(--ink-muted);
+}
