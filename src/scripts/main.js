@@ -80,7 +80,8 @@ document.querySelectorAll('[data-action="blackout"]').forEach((button) => {
     restart.style.textTransform = "uppercase";
     restart.style.letterSpacing = "0.1em";
     restart.addEventListener("click", () => {
-      window.location.href = "./index.html";
+      const isNestedPage = window.location.pathname.includes("/pages/");
+      window.location.href = isNestedPage ? "../../index.html" : "./index.html";
     });
 
     blackout.append(title, restart);

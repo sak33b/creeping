@@ -2,7 +2,7 @@ import forms from "@tailwindcss/forms";
 import containerQueries from "@tailwindcss/container-queries";
 
 export default {
-  content: ["./*.html", "./src/scripts/**/*.js"],
+  content: ["./*.html", "./pages/**/*.html", "./src/scripts/**/*.js"],
   theme: {
     extend: {
       colors: {
